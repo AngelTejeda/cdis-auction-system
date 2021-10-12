@@ -1,0 +1,15 @@
+﻿.fieldContainer {
+    margin: 30px auto;
+    padding: 15px;
+}
+
+.field {
+    width: 100%;
+    display: inline-flex;
+    padding: 5px 15px;
+    margin: 3px 0px;
+}
+
+.inline {
+    flex: 1 100%;
+}

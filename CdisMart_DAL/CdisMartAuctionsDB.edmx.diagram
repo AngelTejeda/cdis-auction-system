@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3f8f2528bbfe4cc9b37905d2124818dd" Name="Diagram1">
+        <EntityTypeShape EntityType="CdisMartAuctionDBModel.Auction" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CdisMartAuctionDBModel.AuctionRecord" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CdisMartAuctionDBModel.User" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="CdisMartAuctionDBModel.FK_Auction_Owner" ManuallyRouted="false" />
+        <AssociationConnector Association="CdisMartAuctionDBModel.FK_Auction_Winner" ManuallyRouted="false" />
+        <AssociationConnector Association="CdisMartAuctionDBModel.FK_AuctionRecord_Auction" ManuallyRouted="false" />
+        <AssociationConnector Association="CdisMartAuctionDBModel.FK_AuctionRecord_Bidder" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

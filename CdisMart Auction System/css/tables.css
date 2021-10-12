@@ -1,0 +1,59 @@
+﻿/* Table */
+.tableContainer {
+    padding: 40px;
+}
+
+.table {
+    background: var(--card-background);
+    margin: auto;
+    width: 95%;
+    border-collapse: collapse;
+}
+
+.table, th, td {
+    border: none;
+}
+
+.table thead {
+    border-bottom: 8px solid var(--card-background);
+}
+
+.table thead th {
+    background: var(--primary);
+    color: var(--primary-text);
+}
+
+.table th, td {
+    background: var(--card-overlay);
+    padding: 1.2em;
+    border: none;
+    border-bottom: 4px solid var(--card-background);
+}
+
+
+/* Table Header Round Corners*/
+.table th:first-child {
+    border-radius: 1.2em 0 0 1.2em;
+}
+
+.table th:last-child {
+    border-radius: 0 1.2em 1.2em 0;
+}
+
+
+/* Table Body Round Corners */
+.table tbody tr:first-child td:first-child {
+    border-top-left-radius: 1.2em;
+}
+
+.table tbody tr:first-child td:last-child {
+    border-top-right-radius: 1.2em;
+}
+
+.table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 1.2em;
+}
+
+.table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 1.2em;
+}

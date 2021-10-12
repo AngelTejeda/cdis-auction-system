@@ -1,0 +1,60 @@
+﻿:root {
+    --app-bar: #121212;
+    --background: #eeeeee;
+    --primary: #6200ee;
+    --primary-text: #ffffff;
+    --error: #b00020;
+    --card-overlay-2: #8e8e8e;
+    --card-background: #c6c6c6;
+    --card-overlay: #f1f1f1;
+    --card-overlay-accent: #8e8e8e;
+    --product-link: #0c0a9c;
+    --history-url: url(../../Images/history-light-mode.png);
+    --bid-url: url(../../Images/bid-light-mode.png);
+    --theme-url: url(../../Images/dark-mode.png);
+}
+
+* {
+    color: #000000;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+.card {
+    background: var(--card-background);
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.5);
+}
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: var(--background);
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+/* Navbar color */
+.navbar-inverse {
+    background-color: var(--app-bar);
+}

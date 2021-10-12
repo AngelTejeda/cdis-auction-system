@@ -1,0 +1,85 @@
+﻿* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form {
+    margin: 30px auto;
+    padding: 5px;
+}
+
+/* Containers */
+.form .inputContainer {
+    position: relative;
+    width: 95%;
+    margin: 15px auto;
+}
+
+.form .imgContainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.form .inlineInputContainer {
+    width: 100%;
+    display: inline-flex;
+}
+
+/* Fields */
+.form .inputContainer .inputLabel {
+    display: block;
+}
+
+.form .inputContainer .inlineLabel {
+    display: inline-block;
+}
+
+.form .inputContainer .inputField {
+    background: var(--card-overlay);
+    width: 100%;
+    border: 2px solid var(--card-overlay-2);
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+/* TODO: Maybe this is not necessary */
+.form .inlineInputContainer .inlineInput {
+    flex: 1 100%;
+}
+
+.form .inputContainer .formValidation {
+    color: var(--error);
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.form .inputContainer .formValidation[style*="inline"] {
+    display: block !important;
+}
+
+/* Button */
+.form .inputContainer .inputField[type=submit] {
+    background-color: var(--primary);
+    color: var(--primary-text);
+    padding: 14px 20px;
+    border: none;
+}
+
+.form .inputContainer .inputField[type=submit]:hover:not([disabled]) {
+    filter: brightness(85%);
+    cursor: pointer;
+}
+
+.form .inputContainer .inputField[type=submit]:active {
+    filter: brightness(85%);
+    -webkit-box-shadow: inset 1px 1px 10px #333;
+    -moz-box-shadow: inset 1px 1px 10px #333;
+    box-shadow: inset 1px 1px 10px #333;
+}
+
+/* Disabled */
+.form .inputContainer .inputField:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+}
